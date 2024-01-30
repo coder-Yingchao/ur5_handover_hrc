@@ -1,0 +1,8 @@
+prefix=/home/yingchao/robot/ur5_pick_place/devel
+
+Name: Assem_battery
+Description: Description of Assem_battery
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/yingchao/robot/ur5_pick_place/devel
+
+Name: agv_base
+Description: Description of agv_base
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

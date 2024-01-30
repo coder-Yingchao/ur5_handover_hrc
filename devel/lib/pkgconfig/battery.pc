@@ -1,0 +1,8 @@
+prefix=/home/yingchao/robot/ur5_pick_place/devel
+
+Name: battery
+Description: Description of battery
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

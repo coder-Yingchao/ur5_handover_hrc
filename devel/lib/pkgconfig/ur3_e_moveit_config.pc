@@ -1,0 +1,8 @@
+prefix=/home/yingchao/robot/ur5_pick_place/devel
+
+Name: ur3_e_moveit_config
+Description: Description of ur3_e_moveit_config
+Version: 1.2.5
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

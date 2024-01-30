@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="agv_base">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.288572714004632 -0.408026864209329 0.275324593141698"
+        rpy="0 0 0" />
+      <mass
+        value="36.7198354948557" />
+      <inertia
+        ixx="0.604677543073114"
+        ixy="4.28405194276803E-06"
+        ixz="8.63548264751912E-09"
+        iyy="1.0089231615248"
+        iyz="5.03936500234873E-10"
+        izz="1.45538768716571" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agv_base/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agv_base/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="1.1102E-16 0.60105 -0.00030818"
+        rpy="0 0 0" />
+      <mass
+        value="165.55" />
+      <inertia
+        ixx="12.907"
+        ixy="5.6512E-16"
+        ixz="4.9588E-16"
+        iyy="6.11"
+        iyz="-0.020206"
+        izz="10.876" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agv_base/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://agv_base/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="fixed">
+    <origin
+      xyz="0.28857 -0.40803 1.3574"
+      rpy="-1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="base" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

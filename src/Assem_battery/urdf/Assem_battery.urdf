@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Assem_battery">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.18931 -0.5281 0.24946"
+        rpy="0 0 0" />
+      <mass
+        value="18.2" />
+      <inertia
+        ixx="0.78916"
+        ixy="3.3747E-05"
+        ixz="-2.8986E-05"
+        iyy="0.40201"
+        iyz="3.3994E-05"
+        izz="1.1482" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.2385 -0.18946 -0.041515"
+        rpy="0 0 0" />
+      <mass
+        value="4.9904" />
+      <inertia
+        ixx="0.0087078"
+        ixy="-1.334E-15"
+        ixz="-3.3356E-16"
+        iyy="0.19998"
+        iyz="1.4532E-16"
+        izz="0.1942" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.92157 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="prismatic">
+    <origin
+      xyz="0 -0.29818 0.2703"
+      rpy="3.1416 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="green">
+    <inertial>
+      <origin
+        xyz="0.070146 0.050465 0.19008"
+        rpy="0 0 0" />
+      <mass
+        value="5.942" />
+      <inertia
+        ixx="0.02955"
+        ixy="-1.2853E-06"
+        ixz="-1.0246E-09"
+        iyy="0.02742"
+        iyz="1.2909E-06"
+        izz="0.0048096" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/green.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.28627 0.66275 0.32941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/green.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="prismatic">
+    <origin
+      xyz="0.37923 -0.39217 0.23861"
+      rpy="1.5708 0 -1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="green" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="black">
+    <inertial>
+      <origin
+        xyz="-0.0876917083020671 0.0465015860845964 0.189423452043824"
+        rpy="0 0 0" />
+      <mass
+        value="11.5463554229197" />
+      <inertia
+        ixx="0.0123443268685222"
+        ixy="8.84564388500147E-19"
+        ixz="-3.17291722971286E-18"
+        iyy="0.0577965429485108"
+        iyz="2.15572763286427E-19"
+        izz="0.0613893205322151" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/black.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.498039215686275 0.498039215686275 0.498039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/black.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="prismatic">
+    <origin
+      xyz="0.27684 -0.2727 0.23768"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="black" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="white">
+    <inertial>
+      <origin
+        xyz="-0.124792038718223 0.0352057092984573 -0.0172713604101973"
+        rpy="0 0 0" />
+      <mass
+        value="0.463533896096077" />
+      <inertia
+        ixx="0.000732190638833217"
+        ixy="5.22431844154991E-05"
+        ixz="-2.31701137971287E-07"
+        iyy="0.00238117015946222"
+        iyz="-6.20330939314216E-07"
+        izz="0.00239583984107389" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/white.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/white.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="prismatic">
+    <origin
+      xyz="0.18914 -0.76697 0.23861"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="white" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="brown">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/brown.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Assem_battery/meshes/brown.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="fixed">
+    <origin
+      xyz="0.0237355051694817 -0.794031907972578 0.238614476251022"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="brown" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

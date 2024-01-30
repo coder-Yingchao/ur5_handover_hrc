@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/yingchao/robot/ur5_pick_place/install/setup.sh

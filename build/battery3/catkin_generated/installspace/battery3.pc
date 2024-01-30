@@ -1,0 +1,8 @@
+prefix=/home/yingchao/robot/ur5_pick_place/install
+
+Name: battery3
+Description: Description of battery3
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
